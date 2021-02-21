@@ -1,146 +1,83 @@
-.header {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-  margin: 0;
-  padding: 0;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-  opacity: 1;
-  font-family: serif;
-  font-size: 12px;
-}
-
-h1 {
-  text-align: center;
-  color: red;
-  font-size: 3rem;
-}
-
 body {
-  background-color: #eeeeee;
+  color: #8e8e8e;
+  background-color: #e5eaed;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
 }
 
 .header {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  z-index: 99;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-  margin: 0;
+  min-height: 75vh;
+  padding: 20px;
+  background-image: url(../../assets/images/rio.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.header-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.header-navbar__list {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-  opacity: 1;
-  font-family: serif;
-  font-size: 12px;
+  list-style: none;
+  font-size: 1.125rem;
 }
 
-h1 {
-  text-align: center;
-  color: red;
-  font-size: 3rem;
+.header-navbar__item {
+  margin: 1vw 3vw;
 }
 
-@media (min-width: 600px) {
-  .header {
-    text-align: center;
-    background-image: url("url");
-    font-size: 20px;
-  }
-  .header {
-    text-align: center;
-    background-image: url("url");
-    font-size: 20px;
-  }
+.header-navbar__link {
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: Raleway, sans-serif;
+  font-size: 1em;
 }
 
-@media (min-width: 900px) {
-  .header {
-    text-align: center;
-    background-image: url("url");
-    font-size: 20px;
-  }
+.header-navbar__link__accent {
+  padding: 10px 30px;
+  background-color: #878586;
 }
 
-@media (min-width: 1600px) {
-  .header h1 {
-    text-align: center;
-    background-image: url("url");
-    font-size: 20px;
-  }
+.header-navbar__link:hover {
+  color: #44596e;
 }
 
-@media (max-width: 1900px) and (min-width: 1601px) {
-  .header h1 {
-    text-align: center;
-    background-image: url("url");
-    font-size: 20px;
-  }
-  .header h1 {
-    text-align: center;
-    background-image: url("url");
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 1200px) and (min-width: 1001px) {
-  .header h1 {
-    text-align: center;
-    background-image: url("url");
-    font-size: 20px;
-  }
-  .header h1 {
-    text-align: center;
-    background-image: url("url");
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 900px) and (min-width: 601px) {
-  .header h1 {
-    text-align: center;
-    background-image: url("url");
-    font-size: 20px;
-  }
-  .header h1 {
-    text-align: center;
-    background-image: url("url");
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 600px) {
-  .header {
-    text-align: center;
-    background-image: url("url");
-    font-size: 20px;
-  }
-  .header {
-    text-align: center;
-    background-image: url("url");
-    font-size: 20px;
-  }
+.border {
+  width: 1px;
+  content: "|";
+  background-color: #ffffff;
 }

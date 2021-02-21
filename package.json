@@ -25,5 +25,8 @@
     "gulp-uglify": "^3.0.2",
     "postcss": "^8.2.0",
     "sort-css-media-queries": "^1.5.2"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }
