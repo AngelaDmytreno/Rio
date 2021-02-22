@@ -1,0 +1,56 @@
+.main {
+  z-index: 1;
+
+  margin: -80px auto 0;
+  &-container {
+    z-index: 1;
+
+    max-width: 992px;
+    margin: -40px auto 0;
+    padding: 20px 20px 0 ;
+    
+    background-color: $color-light;
+  }
+}
+
+.booking-form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 0 0 20px 0;
+   background-color: yellow;
+  background: $color-light;
+
+  &__btn {
+    margin-top: 20px;
+    padding: 8px 60px;
+
+    color: $color-light;
+    border: 0;
+    background-color: $color-accent;
+  }
+}
+
+.booking-item__input {
+  &--short input {
+    width: 50px;
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: rgb(156, 43, 43);
+    border: 1px solid $color-gray-light;
+  }
+
+  &--long input,
+  .booking-form__btn {
+    width: 25vw;
+    max-width: 250px;
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: violet;
+    border: 1px solid $color-gray-light;
+  }
+}
+
+
