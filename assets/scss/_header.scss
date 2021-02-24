@@ -14,52 +14,65 @@
   background-size: cover;
 
   &-content {
-   
     &__container {
       display: flex;
       align-items: center;
       flex-direction: column;
       justify-content: center;
+
       padding: 20% 0;
-      background-color: blue;
     }
 
     &__accent {
       letter-spacing: 0.03em;
       text-transform: uppercase;
+
       color: $color-light;
+
       font-family: $font-header;
       font-size: 0.95em;
       font-weight: 400;
-      background-color: rebeccapurple;
 
-    // &:before {
-    //   padding: 0 10px 0 0;
-    //   content: url("../../assets/images/line.png");
-    // }
 
-    // &:after {
-    //   padding: 0 0 0 10px;
+      &:before {
+        padding: 0 10px 0 0;
 
-    //   content: url("../../assets/images/line.png");
-    // }
+        content: url("../../assets/images/line.png");
+        @media (max-width: 288px) {
+          display: none;
 
+          padding: 0;
+        }
+      }
+
+      &:after {
+        padding: 0 0 0 10px;
+
+        content: url("../../assets/images/line.png");
+        @media (max-width: 288px) {
+          display: none;
+
+          padding: 0;
+        }
+      }
+    }
+
+    &__title {
+      padding: 2vw;
+
+      text-align: center;
+      letter-spacing: 0.03em;
+
+      color: $color-light;
+
+      font-family: $font-header;
+      font-size: 4.0625em;
+      font-weight: 400;
+      @media (max-width: 678px) {
+        font-size: 3em;
+      }
+    }
   }
-
-  &__title {
-    padding: 2vw;
-
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    color: $color-light;
-
-    font-family: $font-header;
-    font-size: 4.0625em;
-    font-weight: 400;
-    background-color: rebeccapurple;
-}
-}
 }
 
 .header-menu {
@@ -67,7 +80,6 @@
   top: 0;
   right: 0;
   left: 0;
-  background-color: green;
 }
 .header-navbar {
   &__list {
@@ -77,7 +89,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: red;
+
     padding: 0;
 
     list-style: none;
