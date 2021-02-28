@@ -3,7 +3,6 @@ header {
   flex-direction: column;
   min-height: 75vh;
   padding: $gap;
-
   background-image: url(../../assets/images/rio.jpg);
   background-position: 50% 50%;
   background-size: cover;
@@ -18,9 +17,7 @@ header {
     &__accent {
       letter-spacing: 0.03em;
       text-transform: uppercase;
-
       color: $color-light;
-
       font-family: $font-header;
       font-size: 0.95em;
       font-weight: 400;
@@ -28,22 +25,18 @@ header {
 
       &:before {
         padding: 0 10px 0 0;
-
         content: url("../../assets/images/line.png");
         @media (max-width: 288px) {
           display: none;
-
           padding: 0;
         }
       }
 
       &:after {
         padding: 0 0 0 10px;
-
         content: url("../../assets/images/line.png");
         @media (max-width: 288px) {
           display: none;
-
           padding: 0;
         }
       }
@@ -52,9 +45,7 @@ header {
     &__title {
       padding: 2vw;
       letter-spacing: 0.03em;
-
       color: $color-light;
-
       font-family: $font-header;
       font-size: 4.0625em;
       font-weight: 400;
@@ -76,9 +67,7 @@ header {
     z-index: 1;
     flex-direction: row;
     padding: 0;
-
     list-style: none;
-
     font-size: 1.125rem;
   }
 
@@ -99,9 +88,7 @@ header {
   &__link {
     transition: color 0.5s;
     text-decoration: none;
-
     color: $color-light;
-
     font-family: $font-main;
     font-size: 1em;
 

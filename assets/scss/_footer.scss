@@ -1,6 +1,5 @@
 footer {
   justify-content: space-between;
-
   max-width: 992px;
   margin: 0 auto;
   padding: $gap 0;
@@ -44,9 +43,7 @@ footer {
 
   &__link {
     margin-top: $gap;
-
     text-decoration: none;
-
     color: #6ba3a2;
   }
 }
@@ -63,13 +60,11 @@ footer {
   flex-direction: column;
   input {
     padding: 5px 15px 5px 10px;
-
     border: 1px solid $color-gray-bg-light;
     justify-content: stretch;
 
     &::placeholder {
       color: $color-gray-bg-light;
-
       font-size: 0.8em;
     }
   }
