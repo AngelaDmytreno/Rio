@@ -6,20 +6,28 @@ main {
 
 .main-container {
   z-index: 1;
+
   max-width: 992px;
   margin: -40px auto 0;
   padding: $gap $gap 0 ;
+
   background-color: $color-light;
 }
 
 .booking-form {
   justify-content: space-evenly;
+
   padding: 0 0 $gap 0;
+
   background: $color-light;
 
   &__item {
     margin-bottom: 15px;
   }
+
+  &__btn {
+    margin-top: 24px;
+    padding: 9px ($gap * 3);
 
   &__btn {
     margin-top: 24px;
@@ -217,4 +225,5 @@ main {
     text-transform: uppercase;
     color: $color-accent;
   }
+}
 }
