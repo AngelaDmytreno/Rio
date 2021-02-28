@@ -1,24 +1,19 @@
 main {
   z-index: 1;
-
   margin: (-$gap * 4) auto 0;
 }
 
 .main-container {
   z-index: 1;
-
   max-width: 992px;
   margin: -40px auto 0;
   padding: $gap $gap 0 ;
-
   background-color: $color-light;
 }
 
 .booking-form {
   justify-content: space-evenly;
-
   padding: 0 0 $gap 0;
-
   background: $color-light;
 
   &__item {
