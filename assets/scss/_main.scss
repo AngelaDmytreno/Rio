@@ -15,56 +15,47 @@ main {
   justify-content: space-evenly;
   padding: 0 0 $gap 0;
   background: $color-light;
-
   &__item {
     margin-bottom: 15px;
   }
-
-  &__btn {
-    margin-top: 24px;
-    padding: 9px ($gap * 3);
-
   &__btn {
     margin-top: 24px;
     padding: 9px ($gap * 3);
     color: $color-light;
     border: 0;
     background-color: $color-accent;
-
     @media (max-width: 380px) {
       padding: 9px 10vw;
     }
-
     @media (max-width: 300px) {
       padding: 9px 5vw;
     }
   }
 }
-
 .booking-item__input {
   &--short input {
     width: 50px;
     margin-top: 5px;
     padding: 8px 10px;
     border: 1px solid $color-gray-light;
-
+    @media (max-width: 920px) {
+      min-width: 30vw;
+    }
+    @media (max-width: 663px) {
+      min-width: 28vw;
+    }
     @media (max-width: 620px) {
       min-width: 24vw;
     }
-
     @media (max-width: 510px) {
       min-width: 20vw;
     }
-
     @media (max-width: 445px) {
       min-width: 15vw;
     }
-
     @media (max-width: 380px) {
       max-width: 6vw;
     }
-
-
   }
 
   &--long input,
@@ -74,26 +65,36 @@ main {
     margin-top: 5px;
     padding: 5px 10px;
     border: 1px solid $color-gray-light;
-
-    @media (max-width: 620px) {
-      min-width: 85vw;
+    @media (max-width: 920px) {
+      min-width: 41vw;
+    }
+    @media (max-width: 530px) {
+      min-width: 40vw;
+    }
+    @media (max-width: 470px) {
+      min-width: 38vw;
+    }
+    @media (max-width: 430px) {
+      min-width: 35vw;
+    }
+    @media (max-width: 320px) {
+      min-width: 32vw;
+    }
+    @media (max-width: 262px) {
+      min-width: 28vw;
     }
   }
 }
-
 .main-content {
   &__container {
     margin: 40px auto 0;
   }
-
   &__title {
     h2 {
       text-align: center;
       font-weight: 400;
     }
-
   }
-
   &__description {
     p {
       padding: 1vw 5vw;
@@ -102,15 +103,12 @@ main {
     }
   }
 }
-
 .card {
   align-items: stretch;
   flex-flow: row wrap;
   justify-content: stretch;
   margin-right: -20px;
   margin-left: -20px;
-
-
   &__title {
     display: flex;
     align-items: center;
@@ -119,7 +117,6 @@ main {
     justify-content: center;
     max-height: 270px;
     background-color: $color-accent;
-
     @media (max-width: 678px) {
       flex: 100% 0;
     }
@@ -128,7 +125,6 @@ main {
       color: $color-light;
       font-weight: 400;
     }
-
     hr {
       width: 50px;
       height: 2px;
@@ -136,24 +132,20 @@ main {
       background-color: #dabc74;
     }
   }
-
   &__description {
     flex: 1 25%;
     flex-flow: column wrap;
     height: 270px;
     margin: 0 5.5vw;
     background-color: $color-light;
-
     @media (max-width: 678px) {
       flex: 100% 0;
     }
-
     p {
       font-size: 0.9em;
       font-weight: 400;
       line-height: 1.5em;
     }
-
     &-link {
       margin-top: 20px;
       text-decoration: none;
@@ -161,17 +153,14 @@ main {
       color: $color-accent;
     }
   }
-
   &__image {
     position: relative;
     width: auto;
     max-height: 270px;
     margin-top: 0;
-
     @media (max-width: 678px) {
       flex: 100% 0;
     }
-
     & img {
       overflow: hidden;
       width: 100%;
@@ -180,7 +169,6 @@ main {
     }
   }
 }
-
 .image-small {
   position: relative;
   flex: 30% 0;
@@ -189,36 +177,30 @@ main {
 .image-big {
   flex: 1 60%;
 }
-
 .container-card-bottom {
   max-width: 992px;
   margin: 30px auto 0;
   padding: 0 20px 0 ;
 }
-
 .container-description-bottom {
   max-width: 1000px;
   margin: 0 auto;
   padding: 1em;
   background-color: $color-light;
-
   p {
     text-align: center;
   }
 }
-
 .bottom-card {
   &__description {
     font-size: 0.9em;
     font-weight: 400;
     line-height: 1.5em;
   }
-
   &__link {
     margin-top: 20px;
     text-decoration: none;
     text-transform: uppercase;
     color: $color-accent;
   }
-}
 }
